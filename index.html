@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Index Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link src="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        /**
+ * index.scss
+ * - Add any styles you want here!
+ */
+body,
+html {
+  background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=841&q=80");
+  /* background-size: cover; */
+  background-position: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.m-page--transition {
+  background-color: #7cbdff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 100%;
+}
+
+.btn-1 {
+  border: 3px solid #fff;
+  color: #fff;
+}
+.btn-1:hover {
+  color: #0e83cd;
+  background: rgb(13, 159, 204);
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+}
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="m-page--transition"></div>
+<button class="btn-r btn-1" src="./adminPage.html" id="adminButton">
+  <a href="./adminPage.html" class="text-light">Admin</a></button>
+<button id="browseLib" class="btn-p btn-1"><a href="bookdetails.html" class="text-light"> <div class="text-light">Browse Library</div> </a></button>
+<script src="https://cdn.jsdelivr.net/npm/bezier-easing@2.0.3/src/index.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>

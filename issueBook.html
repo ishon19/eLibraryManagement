@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Issue Book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #2E2E2E;
+}
+.danger-text {
+    color: #ff3547; }
+.default-text {
+    color: #2BBBAD; 
+}
+.info-text {
+    color: #33b5e5; 
+}
+.form-white .md-form label {
+  color: #fff; 
+}
+.form-white input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px 0 0 #fff;
+    box-shadow: 0 1px 0 0 #fff; 
+}
+.form-white input[type=text]:focus:not([readonly]) + label {
+    color: #fff; 
+}
+.form-white input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px 0 0 #fff;
+    box-shadow: 0 1px 0 0 #fff; 
+}
+.form-white input[type=password]:focus:not([readonly]) + label {
+    color: #fff; 
+}
+.form-white input[type=password], .form-white input[type=text] {
+    border-bottom: 1px solid #fff; 
+}
+.form-white .form-control:focus {
+    color: #fff;
+}
+.form-white .form-control {
+    color: #fff;
+}
+.form-white textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+    color: #fff; 
+}
+.form-white textarea.md-textarea  {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.form-white textarea.md-textarea:focus:not([readonly])+label {
+    color: #fff;
+}
+.ripe-malinka-gradient {
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.near-moon-gradient {
+    background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
+}
+.card-wrapper {
+
+width: 800px;
+
+margin: auto;
+
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body class="hm-gradient">
+    
+    <body class="hm-gradient">
+
+      <div class="container mt-5">
+        <div class="jumbotron bg-dark" >
+          <div class="display-1 text-light text-center">
+            Issue a book
+          </div>
+          <div class="h5 text-light text-center">
+            if you want to check all the books available visit library
+          </div>
+          <div class="text-center">
+            <a href="./index.html" class="btn btn-info btn-lg mt-4">Go to Library</a>
+          </div>
+        </div>
+      </div>
+    
+    <main>
+        
+        <!--MDB Forms-->
+        <div class="container mt-4 card-wrapper mr-5">
+
+                        <!-- Grid row -->
+          <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-6 mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <h3 class="text-center default-text py-3"><i class="fa fa-lock"></i> Issue A Book</h3>
+                          <!--Body-->
+                          <div class="md-form">
+                              <!-- <i class="fas fa-book prefix grey-text"></i> -->
+                              <!-- <input type="text" id="defaultForm-email" class="form-control"> -->
+                              <select class="form-control dropdown" id="bookName">
+                                <option disabled selected>--Select--</option>
+                              </select>
+                          </div>
+                          <div class="md-form">
+                              <i class="fas fa-user-tag prefix grey-text"></i>
+                              <input type="text" id="studentName" class="form-control" placeholder="Student Name">
+                          </div>
+                          <div class="md-form">
+                              <i class="fas fa-calendar-alt prefix grey-text"></i>
+                              <input type="date" id="issueDate" class="form-control" placeholder="Date">
+                          </div>
+                          <div class="md-form">
+                              <i class="fas fa-clock prefix grey-text"></i>
+                              <input type="date" id="returnDate" class="form-control" placeholder="Return Date">
+                          </div>
+                          <div class="text-center">
+                              <button id="issueBook" class="btn btn-default waves-effect waves-light"><a href="adminPage.html" class="text-light">Issue</a></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>      
+    </main>
+    
+        <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+  
+</body>
+<script src="scripts/issueBook.js" type="text/javascript"></script>
+</body>
+</html>
