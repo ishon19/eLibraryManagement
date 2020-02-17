@@ -78,3 +78,18 @@ fs.readFile(file, function(err, data){
         console.log("No database file exists");
     }
 });
+
+$('#searchBox').keyup(function(){
+    var value = $(this).val();
+    if(checkValue(value)){
+        $('.bookCard').each(function(){
+           if($(this).text().toLowerCase().indexOf(value.toLowerCase()) != -1){
+               $(this).show();
+           }else{
+               $(this).hide();
+           }
+        });
+    }else{
+        $('.bookCard').show();
+    }
+});
