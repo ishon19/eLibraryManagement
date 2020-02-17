@@ -13,6 +13,11 @@ function checkValue(value){
   return true;
 }
 
+function checkObj(value){
+  if(value===undefined || value===null) return false;
+  return true;
+}
+
 //Events
 var saveButton = $('#saveButton');
 saveButton.click(function(){
