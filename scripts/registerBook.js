@@ -19,8 +19,7 @@ function checkObj(value){
 }
 
 //Events
-var saveButton = $('#saveButton');
-saveButton.click(function(){
+$('#saveButton').click(function(){
    console.log("save Button clicked");
 
    //saving the data 
@@ -97,7 +96,12 @@ saveButton.click(function(){
 
 
       //set the data
-      toStore.bookInfo.push(bookObj);
+      if(checkObj(toStore.bookInfo)){
+        toStore.bookInfo.push(bookObj);
+      }else{
+         toStore['bookInfo'] = [];
+         toStore.bookInfo.push(bookObj);
+      }
 
       //Finally store the data
       var finalData = JSON.stringify(toStore);

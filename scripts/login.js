@@ -42,6 +42,7 @@ function checkObj(value){
         var mainObj = JSON.parse(data);
         mainObj.adminDetails.map((item,idx)=>{
           if(item.username===userName && item.password===password){
+            localStorage.setItem('loggedInUser',userName);
             location.replace('./adminPage.html');
           }else{
             bootbox.alert("No Admin found with these credentials, Please try again.");
